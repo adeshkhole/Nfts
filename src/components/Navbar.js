@@ -1,5 +1,5 @@
 import logo from '../logo_3.png';
-import fullLogo from '../full_logo.png';
+// import finallogo from '../final logo.jpeg';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,12 +22,12 @@ const [currAddress, updateAddress] = useState('0x');
         <nav className="w-screen">
           <ul className='flex items-end justify-between py-3 bg-transparent text-white pr-5'>
           <li className='flex items-end ml-5 pb-2'>
-            <Link to="/">
-            <img src={fullLogo} alt="" width={120} height={120} className="inline-block -mt-2"/>
+            {/* <Link to="/">
+            <img src={finallogo} alt="" width={120} height={120} className="inline-block -mt-2"/>
             <div className='inline-block font-bold text-xl ml-2'>
               NFT Marketplace
             </div>
-            </Link>
+            </Link> */}
           </li>
           <li className='w-2/6'>
             <ul className='lg:flex justify-between font-bold mr-10 text-lg'>
@@ -56,8 +56,8 @@ const [currAddress, updateAddress] = useState('0x');
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/profile">Profile</Link>
-              </li>              
-              }  
+              </li>
+              }
               <li>
                 <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">{connected? "Connected":"Connect Wallet"}</button>
               </li>
