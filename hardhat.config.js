@@ -3,6 +3,7 @@ require("@nomiclabs/hardhat-ethers");
 const fs = require('fs');
 // const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
 
+// eslint-disable-next-line no-undef
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
@@ -19,7 +20,7 @@ module.exports = {
     },
     goerli: {
       url: "<YOUR_ALCHEMY_URL>",
-      accounts: [ "<YOUR_PRIVATE_KEY>" ]
+      accounts: ["<YOUR_PRIVATE_KEY>"]
     }
   },
   solidity: {
