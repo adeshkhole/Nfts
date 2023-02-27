@@ -1,5 +1,5 @@
-import logo from '../logo_3.png';
-// import finallogo from '../final logo.jpeg';
+// import logo from '../logo_3.png';
+import logonew from '../logonew.png';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,34 +22,34 @@ const [currAddress, updateAddress] = useState('0x');
         <nav className="w-screen">
           <ul className='flex items-end justify-between py-3 bg-transparent text-white pr-5'>
           <li className='flex items-end ml-5 pb-2'>
-            {/* <Link to="/">
-            <img src={finallogo} alt="" width={120} height={120} className="inline-block -mt-2"/>
-            <div className='inline-block font-bold text-xl ml-2'>
+            <Link to="/">
+            <img src={logonew} alt="" width={100} height={100} className="inline-block -mt-2"/>
+            {/* <div className='inline-block font-bold text-xl ml-2'>
               NFT Marketplace
-            </div>
-            </Link> */}
+            </div> */}
+            </Link>
           </li>
           <li className='w-2/6'>
             <ul className='lg:flex justify-between font-bold mr-10 text-lg'>
-              {location.pathname === "/" ? 
+              {location.pathname === "/" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/">Marketplace</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/">Marketplace</Link>
-              </li>              
+              </li>
               }
-              {location.pathname === "/sellNFT" ? 
+              {location.pathname === "/sellNFT" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/sellNFT">List My NFT</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/sellNFT">List My NFT</Link>
-              </li>              
-              }              
-              {location.pathname === "/profile" ? 
+              </li>
+              }
+              {location.pathname === "/profile" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/profile">Profile</Link>
               </li>
@@ -65,7 +65,7 @@ const [currAddress, updateAddress] = useState('0x');
           </li>
           </ul>
         </nav>
-        <div className='text-white text-bold text-right mr-10 text-sm'>
+        <div className='text-black text-bold text-right mr-10 text-sm'>
           {currAddress !== "0x" ? "Connected to":"Not Connected. Please login to view NFTs"} {currAddress !== "0x" ? (currAddress.substring(0,15)+'...'):""}
         </div>
       </div>

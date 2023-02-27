@@ -11,9 +11,14 @@ body {
   /*font-family: 'M PLUS 1p', sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('./final\ logo.jpeg'); */
-  background-color: black;
-  /* background-size: 100% 150%; */
+  /* background: #E8CBC0;  
+  background: -webkit-linear-gradient(to bottom, #636FA4, #E8CBC0);  
+  background: linear-gradient(to bottom, #636FA4, #E8CBC0);  */
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  background-size: 100% 150%;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: 0s;
